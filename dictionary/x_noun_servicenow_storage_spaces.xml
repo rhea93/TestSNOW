@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Storage Spaces" max_length="40" name="x_noun_servicenow_storage_spaces" type="collection">
+        <element label="Name" max_length="255" name="name" type="string_full_utf8"/>
+        <element label="Owner Name" max_length="32" name="owner_name" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="owner_name"/>
+        </index>
+    </element>
+</database>
